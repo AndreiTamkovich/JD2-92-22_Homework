@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet id="1" author="weron4eg@gmail.com">
+        <sql>
+            CREATE TABLE IF NOT EXISTS t_person (
+            id BIGINT(19) NOT NULL,
+            age INT,
+            firstname VARCHAR(255) NULL,
+            lastname VARCHAR(255) NULL,
+            PRIMARY KEY (ID));
+        </sql>
+    </changeSet>
+    <changeSet id="2" author="weron4eg@gmail.com">
+        <sql>
+            INSERT INTO t_person (id, firstname, lastname, age) values (1,'Alex','Ivanov', 20);
+        </sql>
+    </changeSet>
+</databaseChangeLog>

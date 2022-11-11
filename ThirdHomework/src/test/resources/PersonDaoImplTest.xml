@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset>
+    <t_person id="11" firstname="Sasha" lastname="Petrov" age="22"/>
+    <t_person id="12" firstname="Alex" lastname="Sidorov" age="22"/>
+</dataset>
