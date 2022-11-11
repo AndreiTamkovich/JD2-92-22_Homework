@@ -1,0 +1,10 @@
+Вывести список получателей платежей, и сумму платежей по каждому из них:
+select rs.name, sum(ex.price) as sum from homework2.receivers as rs join homework2.expenses as ex on ex.receiver=rs.num group by rs.num
+
+Вывести сумму платежей за тот день, когда был наибольший платеж:
+select paydate, sum(price) as sum from homework2.expenses as ex, (select max(price) as max from homework2.expenses) as t where ex.price=t.max group by paydate
+
+Вывести наибольший платеж за тот день, когда сумма платежей была наибольшей:
+select paydate, receiver, price from homework2.expenses as e, 
+select paydate as p, sum(price) as s from homework2.expenses group by paydate order by sum(price) desc limit 1 as t, 
+homework2.receivers as r where e.paydate = t.p and receiver = r.num order by value desc limit 1
