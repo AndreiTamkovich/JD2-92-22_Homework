@@ -19,4 +19,25 @@
             INSERT INTO t_person (id, firstname, lastname, age) values (1,'Alex','Ivanov', 20);
         </sql>
     </changeSet>
+    <changeSet id="3" author="weron4eg@gmail.com">
+        <validCheckSum>8:ca764a187344c093ffd3e8e4919832b6</validCheckSum>
+        <sql endDelimiter="//">
+            CREATE TRIGGER test_trigger
+            BEFORE INSERT ON t_person FOR EACH ROW
+            IF NEW.AGE>50 THEN
+            SIGNAL SQLSTATE '45000'
+            SET MESSAGE_TEXT = 'Testtesttest';
+            END IF;
+        </sql>
+    </changeSet>
+    <changeSet id="4" author="weron4eg@gmail.com">
+        <validCheckSum>8:a3c688ae83f9806beea63d5048abb1ad</validCheckSum>
+        <sql endDelimiter="//">
+            CREATE TRIGGER test_trigger5
+            BEFORE INSERT ON t_person FOR EACH ROW
+            IF NEW.AGE>50 THEN
+            insert into person.t_person(id,age,firstname,lastname) values (new.99,new.77, new.'sdfs', new.'ghhhh');
+            END IF;
+        </sql>
+    </changeSet>
 </databaseChangeLog>

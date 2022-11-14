@@ -18,8 +18,5 @@
         <module name="ThirdHomework" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="ThirdHomework" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>

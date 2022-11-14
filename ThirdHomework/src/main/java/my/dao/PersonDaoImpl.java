@@ -85,7 +85,6 @@ public class PersonDaoImpl implements PersonDao {
             person.setName(name);
             person.setSurname(surname);
             session.flush();
-            session.refresh(person);
             System.out.println("Flush applied");
             session.getTransaction().commit();
         } catch (Exception e) {
