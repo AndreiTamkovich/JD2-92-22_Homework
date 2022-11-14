@@ -30,4 +30,5 @@ public class Person implements Serializable {
     private String name;
     @Column(name = "lastname")
     private String surname;
+
 }
