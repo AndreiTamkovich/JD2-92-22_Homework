@@ -23,10 +23,9 @@
         <sql endDelimiter="//">
         CREATE TRIGGER test_trigger
         BEFORE INSERT ON t_person FOR EACH ROW
-        IF NEW.firstname=Andrei or NEW.age>150 THEN
+        IF NEW.AGE>150 THEN
         SIGNAL SQLSTATE '45000'
-        SET MESSAGE_TEXT = 'An attempt was detected to add a person
-        with the name Andrei or over 150 years old';
+        SET MESSAGE_TEXT = 'An attempt was made to add a person over 150 years of age';
         END IF;
     </sql>
     </changeSet>
