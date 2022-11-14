@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Counter" />
+        <module name="Service" />
+        <module name="ImageCounter" />
+        <module name="GetBrowser" />
+        <module name="CompiledExample" />
+        <module name="BaseData" />
+        <module name="FormWithNamePhoneMail" />
+      </profile>
+      <profile name="Annotation profile for managePerson" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar" />
+        </processorPath>
+        <module name="ThirdHomework" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="BaseData" target="11" />
+      <module name="CompiledExample" target="11" />
+      <module name="Counter" target="11" />
+      <module name="FirstHomework" target="11" />
+      <module name="FormWithNamePhoneMail" target="11" />
+      <module name="GetBrowser" target="11" />
+      <module name="ImageCounter" target="11" />
+      <module name="SecondHomework" target="11" />
+      <module name="Service" target="11" />
+      <module name="ThirdHomework" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

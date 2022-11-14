@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SecondHomework/BaseData/BaseData.iml" filepath="$PROJECT_DIR$/SecondHomework/BaseData/BaseData.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FirstHomework/CompiledExample/CompiledExample.iml" filepath="$PROJECT_DIR$/FirstHomework/CompiledExample/CompiledExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FirstHomework/Counter/Counter.iml" filepath="$PROJECT_DIR$/FirstHomework/Counter/Counter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FirstHomework/FirstHomework.iml" filepath="$PROJECT_DIR$/FirstHomework/FirstHomework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FirstHomework/FormWithNamePhoneMail/FormWithNamePhoneMail.iml" filepath="$PROJECT_DIR$/FirstHomework/FormWithNamePhoneMail/FormWithNamePhoneMail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FirstHomework/GetBrowser/GetBrowser.iml" filepath="$PROJECT_DIR$/FirstHomework/GetBrowser/GetBrowser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FirstHomework/ImageCounter/ImageCounter.iml" filepath="$PROJECT_DIR$/FirstHomework/ImageCounter/ImageCounter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/JD2-92-22_Homework.iml" filepath="$PROJECT_DIR$/.idea/JD2-92-22_Homework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SecondHomework/SecondHomework.iml" filepath="$PROJECT_DIR$/SecondHomework/SecondHomework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SecondHomework/Service/Service.iml" filepath="$PROJECT_DIR$/SecondHomework/Service/Service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ThirdHomework/ThirdHomework.iml" filepath="$PROJECT_DIR$/ThirdHomework/ThirdHomework.iml" />
+    </modules>
+  </component>
+</project>
