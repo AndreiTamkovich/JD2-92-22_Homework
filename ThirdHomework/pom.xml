@@ -75,6 +75,7 @@
                         <configuration>
                             <propertyFile>src/main/resources/person.jdbc.properties</propertyFile>
                             <changeLogFile>src/main/resources/changelog-master.xml</changeLogFile>
+                            <clearCheckSums>true</clearCheckSums>
                         </configuration>
                         <goals>
                             <goal>update</goal>
@@ -86,6 +87,7 @@
                         <configuration>
                             <propertyFile>src/test/resources/person_test.jdbc.properties</propertyFile>
                             <changeLogFile>src/main/resources/changelog-master.xml</changeLogFile>
+                            <clearCheckSums>true</clearCheckSums>
                         </configuration>
                         <goals>
                             <goal>update</goal>
