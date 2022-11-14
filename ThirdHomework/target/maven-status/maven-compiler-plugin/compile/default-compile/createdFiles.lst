@@ -1,9 +1,0 @@
-my\loader\PersonMain.class
-my\util\MysqlJdbcDataSource.class
-my\dao\PersonDaoImpl.class
-my\loader\PersonScanner.class
-my\model\Person$PersonBuilder.class
-my\model\Person.class
-my\util\DataConfig.class
-my\util\MysqlSessionFactory.class
-my\dao\PersonDao.class
