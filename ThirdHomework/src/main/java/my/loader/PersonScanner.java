@@ -50,7 +50,7 @@ public class PersonScanner {
         } else if (choice == 3) {
             personDao.delete(personDao.get(scanId()));
         } else if (choice == 4) {
-            personDao.delete(personDao.load(scanId()));
+            personDao.load(scanId());
         } else if (choice == 5) {
             personDao.flush(scanId(), scanAge(), scanFirstName(), scanSurname());
         } else if (choice == 6) {
