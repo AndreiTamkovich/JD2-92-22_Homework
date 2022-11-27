@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset>
+    <t_person_join id="1111" name="Sasha" surname="Petrova"/>
+    <t_student_join PERSON_ID="1111" faculty="FacultyofPhysics" mark="6.5"/>
+</dataset>

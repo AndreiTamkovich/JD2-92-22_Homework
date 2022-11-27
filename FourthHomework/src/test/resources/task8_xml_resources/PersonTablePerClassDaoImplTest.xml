@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset>
+    <t_person_table_per_class id="11111" name="Sasha" surname="Petrova"/>
+    <t_person_table_per_class id="11112" name="Alex" surname="Alexov"/>
+</dataset>

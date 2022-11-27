@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+		http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet id="1" author="weron4eg@gmail.com">
+        <sql>
+            CREATE TABLE IF NOT EXISTS t_person (
+            id INT(11) NOT NULL,
+            PERSON_TYPE VARCHAR(1) NOT NULL,
+            name VARCHAR(255) NULL,
+            surname VARCHAR(255) NULL,
+            faculty VARCHAR(255) NOT NULL,
+            mark DOUBLE,
+            company VARCHAR(255),
+            salary DOUBLE,
+            PRIMARY KEY (ID));
+        </sql>
+    </changeSet>
+    <changeSet id="2" author="weron4eg@gmail.com">
+        <sql>
+            CREATE TABLE IF NOT EXISTS t_person_join (
+            id INT(11) NOT NULL,
+            name VARCHAR(255) NULL,
+            surname VARCHAR(255) NULL,
+            PRIMARY KEY (id));
+        </sql>
+    </changeSet>
+    <changeSet id="3" author="weron4eg@gmail.com">
+        <sql>
+            CREATE TABLE IF NOT EXISTS t_employee_join (
+            PERSON_ID INT(11) NOT NULL,
+            company VARCHAR(255),
+            salary DOUBLE,
+            PRIMARY KEY (PERSON_ID),
+            FOREIGN KEY (PERSON_ID) REFERENCES t_person_join (id));
+        </sql>
+    </changeSet>
+    <changeSet id="4" author="weron4eg@gmail.com">
+        <sql>
+            CREATE TABLE IF NOT EXISTS t_student_join (
+            PERSON_ID INT(11) NOT NULL,
+            faculty VARCHAR(255) NOT NULL,
+            mark DOUBLE,
+            PRIMARY KEY (PERSON_ID),
+            FOREIGN KEY (PERSON_ID) REFERENCES t_person_join (id));
+        </sql>
+    </changeSet>
+    <changeSet id="5" author="weron4eg@gmail.com">
+        <sql>
+            CREATE TABLE IF NOT EXISTS t_person_table_per_class (
+            id INT(11) NOT NULL,
+            name VARCHAR(255),
+            surname VARCHAR(255),
+            PRIMARY KEY (id));
+        </sql>
+    </changeSet>
+    <changeSet id="6" author="weron4eg@gmail.com">
+        <sql>
+            CREATE TABLE IF NOT EXISTS t_employee_table_per_class(
+            id INT(11) NOT NULL,
+            name VARCHAR(255),
+            surname VARCHAR(255),
+            company VARCHAR(255),
+            salary DOUBLE,
+            PRIMARY KEY (id));
+        </sql>
+    </changeSet>
+    <changeSet id="7" author="weron4eg@gmail.com">
+        <sql>
+            CREATE TABLE IF NOT EXISTS t_student_table_per_class(
+            id INT(11) NOT NULL,
+            name VARCHAR(255),
+            surname VARCHAR(255),
+            faculty VARCHAR(255),
+            mark DOUBLE,
+            PRIMARY KEY (id));
+        </sql>
+    </changeSet>
+    <changeSet id="8" author="weron4eg@gmail.com">
+        <sql>
+            CREATE TABLE IF NOT EXISTS t_product_sequence(
+            id INT(11) NOT NULL,
+            name VARCHAR(255),
+            price DOUBLE,
+            PRIMARY KEY (id));
+        </sql>
+    </changeSet>
+    <changeSet id="9" author="weron4eg@gmail.com">
+        <sql>
+            CREATE TABLE IF NOT EXISTS t_product_seq(
+            next_val INT UNSIGNED PRIMARY KEY NOT NULL);
+            INSERT INTO t_product_seq VALUES (1);
+        </sql>
+    </changeSet>
+    <changeSet id="10" author="weron4eg@gmail.com">
+        <sql>
+            CREATE TABLE IF NOT EXISTS t_product_increment(
+            id INT(11) NOT NULL,
+            name VARCHAR(255),
+            price DOUBLE,
+            PRIMARY KEY (id));
+        </sql>
+    </changeSet>
+    <changeSet id="11" author="weron4eg@gmail.com">
+        <sql>
+            CREATE TABLE IF NOT EXISTS t_human(
+            id INT(11) NOT NULL,
+            name VARCHAR(255),
+            gender VARCHAR(255),
+            age INT(11),
+            country VARCHAR(255),
+            city VARCHAR(255),
+            PRIMARY KEY (id));
+        </sql>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset>
+    <t_human id="100000" name="Alex" gender="male" age="25" country="Belarus" city="Borisov" />
+    <t_human id="100001" name="Sasha" gender="female" age="28" country="Belarus" city="Mogilev" />
+</dataset>

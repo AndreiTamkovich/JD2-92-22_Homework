@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<dataset>
+    <t_person id="201" PERSON_TYPE="E" name="Ivan" surname = "Ivanov" company = "A1" salary = "567.89"/>
+</dataset>
