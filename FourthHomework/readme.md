@@ -8,8 +8,10 @@ Task7
 
 Task8:
 8.1 - пакет task8_one_table (Person, Student, Employee). Таблица t_person.
+
 8.2 - пакет task8_join (PersonJoin, StudentJoin, EmployeeJoin). Таблицы *_join.
 Классы и ресурсы для тестов с наличием "Join" в названии классов.
+
 8.3 - пакет task8_table_per_class. Таблицы *_table_per_class. Классы и ресурсы, соответственно,
 с наличием TablePerClass в названии
 
