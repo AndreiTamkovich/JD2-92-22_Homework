@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Getter
 @Setter
-@Component("person")
+@Component
 public class Person {
     @Value("1")
     Long id;

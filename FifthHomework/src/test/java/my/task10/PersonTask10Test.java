@@ -1,7 +1,6 @@
 package my.task10;
 
 import lombok.SneakyThrows;
-import my.task10.beans.Address;
 import my.task10.beans.Person;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
